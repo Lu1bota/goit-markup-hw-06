@@ -411,13 +411,9 @@ fieldset {
 }
 
 .team-list-icons-item {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    /*background-color: #4D5AE5; */
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -470,11 +466,6 @@ fieldset {
     column-gap: 24px;
 }
 
-.portfolio-list-item {
-    cursor: pointer;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .portfolio-list-item:hover {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
@@ -525,7 +516,13 @@ fieldset {
     transform: translateY(0);
 }
 
+/* .portfolio-list-item {
+    cursor: pointer;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} */
+
 .portfolio-list-item {
+    cursor: pointer;
     width: calc((100% - 48px) / 3);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
