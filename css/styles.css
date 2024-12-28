@@ -479,7 +479,7 @@ fieldset {
      background-repeat: no-repeat;
      background-position: center center;
      background-size: cover;
-     max-width: 320px;
+     max-width: 676px;
      min-height: 432px;
      line-height: 1.07;
      display: flex;
@@ -497,7 +497,7 @@ fieldset {
  @media screen and (min-width: 768px) {
     .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/tablet-bg.jpg);
-        max-width: 768px;
+        max-width: 1157px;
         min-height: 436px;
         padding: 112px 0;
     }
@@ -583,9 +583,7 @@ fieldset {
  }
 
  .advantages-container {
-     display: flex;
-     align-items: center;
-     justify-content: center;
+     
  }
 
  .advantages-list {
@@ -598,6 +596,9 @@ fieldset {
 
  @media screen and (min-width: 768px) {
     .advantages-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
         row-gap: 72px;
         column-gap: 24px;
     }
@@ -606,16 +607,17 @@ fieldset {
  @media screen and (min-width: 1158px) {
     .advantages-list {
         flex-wrap: nowrap;
+        gap: 24px;
     }
  }
 
  .advantages-list-item {
-     width: calc((100% - 216px) / 4);
+     flex-basis: calc((100% - 216px) / 4);
  }
 
  @media screen and (min-width: 768px) {
     .advantages-list-item {
-        width: calc((100% - 72px) / 4);
+     flex-basis: calc((100% - 24px) / 2);
     }
  }
 
@@ -627,7 +629,7 @@ fieldset {
      text-align: center;
      color: #2e2f42;
      margin-bottom: 8px;
-     width: 288px;
+     min-width: 288px;
  }
 
   @media screen and (min-width: 768px) {
@@ -651,7 +653,7 @@ fieldset {
      line-height: 1.5;
      letter-spacing: 0.02em;
      color: #434455;
-     width: 288px;
+     min-width: 288px;
  }
 
  @media screen and (min-width: 768px) {
@@ -666,7 +668,81 @@ fieldset {
      font-weight: 400;
      width: 264px;
         
-    }  
+    } 
+    
+        .advantages-list-icons {
+            padding: 24px 100px;
+            width: 264px;
+            height: 112px;
+    
+        }
+    
+        .container-item-icons {
+            border: 1px solid #8E8F99;
+            height: 112px;
+            margin-bottom: 8px;
+            border-radius: 4px;
+            background-color: #f4f4fd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
  }
  
+ /* #endregion */
+
+ /* #region TEAM */
+
+.team {
+    background: #f4f4fd;
+}
+
+.team-title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+}
+
+.team-list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 72px;
+}
+
+@media screen and (min-width: 768px) {
+    .team-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 24px;
+        row-gap: 64px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .team-list {
+        flex-wrap: nowrap;
+        gap: 24px;
+    }
+}
+
+.container-list-team {
+    padding: 32px 0;
+    border: 1px solid #e7e9fc;
+}
+
+.team-list-item {
+    background-color: #FFFFFF;
+    /* width: calc((100% - 72px) / 4); */
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
  /* #endregion */
