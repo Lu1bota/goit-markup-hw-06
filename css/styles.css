@@ -625,7 +625,7 @@ fieldset {
 
  @media screen and (min-width: 1158px) {
     .advantages-list-item {
-        flex-basis: calc((100% - 72px) / 4);
+        max-width: calc((100% - 72px) / 4);
         }
  }
 
