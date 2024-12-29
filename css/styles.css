@@ -597,10 +597,10 @@ fieldset {
  @media screen and (min-width: 768px) {
     .advantages-list {
         flex-direction: row;
-        /* flex-wrap: wrap; */
+        flex-wrap: wrap;
         justify-content: center;
-        /* row-gap: 72px;
-        column-gap: 24px; */
+        /* row-gap: 72px;*/
+        column-gap: 24px; 
     }
  }
 
@@ -637,7 +637,7 @@ fieldset {
      text-align: center;
      color: #2e2f42;
      margin-bottom: 8px;
-     min-width: 264px;
+     /* min-width: 264px; */
  }
 
   @media screen and (min-width: 768px) {
@@ -661,7 +661,7 @@ fieldset {
      line-height: 1.5;
      letter-spacing: 0.02em;
      color: #434455;
-     min-width: 288px;
+     /* min-width: 288px; */
  }
 
  @media screen and (min-width: 768px) {
@@ -755,13 +755,13 @@ fieldset {
 
 @media screen and (min-width: 768px) {
     .team-list-item {
-        flex-basis: calc((100% - 192px) / 4);
+        max-width: calc((100% - 24px) / 2);
     }
 }
 
 @media screen and (min-width: 1158px) {
     .team-list-item {
-        flex-basis: calc((100% - 72px) / 4);
+        max-width: calc((100% - 72px) / 4);
     }
 }
 
@@ -1166,5 +1166,11 @@ fieldset {
     margin-left: 16px;
     fill: #fff;
 }
+
+ /* #endregion */
+
+ /* #region MODAL */
+
+
 
  /* #endregion */
