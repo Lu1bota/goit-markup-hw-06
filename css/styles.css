@@ -619,14 +619,14 @@ fieldset {
 
  @media screen and (min-width: 768px) {
     .advantages-list-item {
-     flex-basis: calc((100% - 24px) / 2);
+     max-width: calc((100% - 24px) / 2);
     }
  }
 
  @media screen and (min-width: 1158px) {
     .advantages-list-item {
-        max-width: calc((100% - 72px) / 4);
-        }
+     max-width: calc((100% - 72px) / 4);
+    }
  }
 
  .advantages-list-title {
