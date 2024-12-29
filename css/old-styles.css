@@ -566,10 +566,7 @@ fieldset {
     margin-right: 120px;
 }
 
-.container-footer-social-media {
-    
-    
-}
+.container-footer-social-media {}
 
 .footer-logo {
     display: inline-block;
@@ -577,7 +574,6 @@ fieldset {
 }
 
 .logo-text-footer {
-    font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 1.17;
