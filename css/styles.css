@@ -124,8 +124,6 @@ fieldset {
     line-height: 0;
 }
 
-.icon-btn-menu-mobile {}
-
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -399,8 +397,6 @@ fieldset {
     font-style: normal;
  }
 
- .mobile-contacts-list {}
-
  .mobile-contacts-list-item {
     margin-bottom: 24px;
  }
@@ -439,11 +435,6 @@ fieldset {
      height: 40px;
      border-radius: 50%;
      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
- }
-
- .mobile-list-icons-item:hover,
- .mobile-list-icons-item:focus {
-    
  }
 
  .mobile-list-icon-item-link {
@@ -582,17 +573,11 @@ fieldset {
     display: none;
  }
 
- .advantages-container {
-     
- }
-
  .advantages-list {
      display: flex;
      flex-direction: column;
      gap: 72px;
  }
-
- .advantages-list-item {}
 
  @media screen and (min-width: 768px) {
     .advantages-list {
@@ -676,14 +661,7 @@ fieldset {
      font-weight: 400;
      width: 264px;
         
-    } 
-    
-        .advantages-list-icons {
-            /* padding: 24px 100px;
-            width: 264px;
-            height: 112px; */
-    
-        }
+    }
     
         .container-item-icons {
             border: 1px solid #8E8F99;
@@ -971,9 +949,6 @@ fieldset {
         justify-content: space-between;
         flex-wrap: nowrap;
     }
-
-    .container-content {
-        }
 }
 
 .footer-logo {
@@ -1070,11 +1045,6 @@ fieldset {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-@media screen and (min-width: 1158px) {
-    .container-subscribe {
-        }
 }
 
 .subscribe-text {
@@ -1204,7 +1174,7 @@ fieldset {
     background-color: #fcfcfc;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 24px;
+    padding: 24px 16px;
     padding-top: 72px;
 }
 
@@ -1212,6 +1182,8 @@ fieldset {
     .modal {
         width: 408px;
         min-height: 584px;
+        padding: 24px;
+        padding-top: 72px;
     }
 }
 
@@ -1365,6 +1337,9 @@ fieldset {
 }
 
 .form-checkbox-label {
+    display: flex;
+    align-items: center;
+
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
@@ -1383,6 +1358,7 @@ fieldset {
     border: 1px solid rgba(46, 47, 66, 0.4);
     cursor: pointer;
     margin-right: 8px;
+    flex-shrink: 0;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
